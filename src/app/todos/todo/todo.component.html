@@ -1,0 +1,16 @@
+
+  <app-todo-header (add) = 'addTodo($event)'></app-todo-header>
+  <app-todo-list [todo] = 'todo' (del) = 'delTodo($event)' (change) = 'changeTodoState($event)'></app-todo-list>
+
+
+  <a routerLink="/about/child/1" routerLinkActive="active">宝马</a>
+  <a routerLink="/about/child/2" routerLinkActive="active">奔驰</a>
+  <a routerLink="/about/child/3" routerLinkActive="active">夸克</a>
+  <router-outlet></router-outlet>
+
+  <img src="/assets/image/timg.gif" alt="">
+
+
+
+
+

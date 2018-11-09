@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="let todos of todo;trackBy:trackByTodo">
+    <span [class.state] = 'todos.isClick' (click) = 'changeState(todos)'>{{ todos.hobby }}</span> &nbsp;&nbsp;&nbsp; <span (click) = 'delData(todos.id)'>X</span>
+  </li>
+</ul>
